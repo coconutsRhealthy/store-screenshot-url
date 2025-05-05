@@ -130,7 +130,7 @@ const puppeteerCrawler = new PuppeteerCrawler({
 
         switch (format) {
             case 'png':
-                screenshotBuffer = await page.screenshot({ fullPage: true });
+                screenshotBuffer = await page.screenshot();
                 contentType = 'image/png'
                 break;
             case 'pdf':
